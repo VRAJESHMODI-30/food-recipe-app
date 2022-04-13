@@ -2,12 +2,12 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const FooditemSchema = new Schema({
-  foodItemNumber: {
+  itemNumber: {
     type: Number,
     required: true,
     unique: true,
   },
-  name: {
+  itemName: {
     type: String,
     required: true,
   },
@@ -20,5 +20,5 @@ const FooditemSchema = new Schema({
     required: true,
   },
 });
-const Food = mongoose.model("food-items", FooditemSchema);
+const Food = mongoose.model("food-item", FooditemSchema);
 module.exports = Food;

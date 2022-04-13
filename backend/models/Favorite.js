@@ -6,12 +6,12 @@ const FavoriteSchema = new Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "user",
   },
-  foodItemNumber: {
+  itemNumber: {
     type: Number,
     required: true,
     unique: true,
   },
-  name: {
+  itemName: {
     type: String,
     required: true,
   },
@@ -28,5 +28,5 @@ const FavoriteSchema = new Schema({
     default: Date.now,
   },
 });
-const Fav = mongoose.model("favorite", FavoriteSchema);
-module.exports = Fav;
+const Favorite = mongoose.model("favorite", FavoriteSchema);
+module.exports = Favorite;
