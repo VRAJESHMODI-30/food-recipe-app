@@ -10,7 +10,7 @@ app.use(express.json());
 //Available routes
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/food-items", require("./routes/foodItems"));
-app.use("/api/favorite", require("./routes/favoriteItems"));
+app.use("/api/myRecipe", require("./routes/myRecipes"));
 
 app.get("/", (req, res) => {
   res.send("hello");

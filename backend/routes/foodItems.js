@@ -2,7 +2,7 @@ const express = require("express");
 const Fooditem = require("../models/Fooditem");
 const router = express.Router();
 
-//ROUTE-1: Get all recipes from API:
+//ROUTE-1: Get all recipes from food-items collection/API:
 router.get("/getFooditems", async (req, res) => {
   try {
     const fooditems = await Fooditem.find();
@@ -13,7 +13,7 @@ router.get("/getFooditems", async (req, res) => {
   }
 });
 
-//ROUTE-2: Add recipes to the API:
+//ROUTE-2: Add recipes to the food-items collection/API:
 router.post("/addFoodItem", async (req, res) => {
   const { itemNumber, itemName, ingredients, recipe } = req.body;
   try {
@@ -31,7 +31,7 @@ router.post("/addFoodItem", async (req, res) => {
   }
 });
 
-//ROUTE-3: Update recipe in the API:
+//ROUTE-3: Update recipe in the food-items collection/API:
 router.put("/updateFoodItem/:id", async (req, res) => {
   const { itemName, ingredients, recipe } = req.body;
 
@@ -68,7 +68,7 @@ router.put("/updateFoodItem/:id", async (req, res) => {
   }
 });
 
-//ROUTE-4: Delete an exsisting fooditem from API:
+//ROUTE-4: Delete an exsisting fooditem from food-items collection/API:
 router.delete("/deleteFoodItem/:id", async (req, res) => {
   try {
     //Find a fooditem to be deleted and delete it

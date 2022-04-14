@@ -28,5 +28,5 @@ const FavoriteSchema = new Schema({
     default: Date.now,
   },
 });
-const Favorite = mongoose.model("favorite", FavoriteSchema);
+const Favorite = mongoose.model("myRecipe", FavoriteSchema);
 module.exports = Favorite;
