@@ -11,7 +11,7 @@ const FooditemSchema = new Schema({
     type: String,
     required: true,
   },
-  ingrediants: {
+  ingredients: {
     type: Array,
     required: true,
   },

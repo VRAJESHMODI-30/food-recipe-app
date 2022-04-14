@@ -15,7 +15,7 @@ const FavoriteSchema = new Schema({
     type: String,
     required: true,
   },
-  ingrediants: {
+  ingredients: {
     type: Array,
     required: true,
   },
