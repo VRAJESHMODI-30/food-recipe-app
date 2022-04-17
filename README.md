@@ -10,15 +10,19 @@ devDependencies:
 dependencies:
 <ins>npm install react-router-dom concurrently<br/>
 
-To runs the app in the development mode. ***npm run both***
+### <ins>Note:- <br/>
+To runs the app in the development mode. Type ***"npm run both"*** in the terminal as shown in below clip <br />
+  
+  ![start](https://user-images.githubusercontent.com/91773413/163727533-02989943-da78-462f-bb1e-d8994d8f80d2.gif)
 
+  
 **Run (react-app)**
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 **Run mongoDB Server**
 Open [http://localhost:5000](http://localhost:5000) to view it in your browser.
 
-**CookBook Functionality**<br/>
+**CookBook Functionalities:**<br/>
 **->** It has Login/Signup system which is **end-to-end encrypted**. So, Don't worry about hackers.<br />
 
 ![Encrypted password](https://user-images.githubusercontent.com/91773413/163726365-c61b3ee8-e9b3-4931-9b25-3527bed5fc82.png)
