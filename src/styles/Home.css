@@ -1,0 +1,35 @@
+*{
+      margin: 0;
+      padding: 0;
+}
+
+.font{
+      font-size: 6vh;
+}
+.outerBox{
+      background: url("../images/Home1.jpg") no-repeat center center / cover;
+      filter: brightness(60%);
+      height: 92vh;
+      width:100vw;
+      z-index: -1;
+}
+.innerBox{
+      width: 60%;
+      position: absolute;
+      top:30%;
+      left: 2%;
+      color: white;
+      font-size: x-large;
+      font-weight: 500;
+}
+
+@media (max-width:511px){
+      .innerBox{
+            width: 80%;
+            position: absolute;
+            top:30%;
+            left: 1%;
+            color: white;
+            font-size: x-large;
+      }
+}

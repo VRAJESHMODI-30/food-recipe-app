@@ -15,13 +15,14 @@ router.get("/getFooditems", async (req, res) => {
 
 //ROUTE-2: Add recipes to the food-items collection/API:
 router.post("/addFoodItem", async (req, res) => {
-  const { itemNumber, itemName, ingredients, recipe } = req.body;
+  const { itemNumber, itemName, ingredients, recipe, url } = req.body;
   try {
     const fooditem = new Fooditem({
       itemNumber,
       itemName,
       ingredients,
       recipe,
+      url,
     });
     const savedNote = await fooditem.save();
     res.json(savedNote);

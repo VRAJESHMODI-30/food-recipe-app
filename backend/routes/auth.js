@@ -18,8 +18,9 @@ router.post(
   async (req, res) => {
     //If validation get compromissed then error occur else move forward.
     const errors = validationResult(req);
+    let success = false;
     if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
+      return res.status(400).json({ success, errors: errors.array() });
     }
     //Checks whether user already exist with same email
     try {
@@ -27,7 +28,10 @@ router.post(
       if (user) {
         return res
           .status(400)
-          .json({ error: "This email already has been registered...!" });
+          .json({
+            success,
+            error: "This email already has been registered...!",
+          });
       }
 
       //Hashing password
@@ -47,7 +51,8 @@ router.post(
         },
       };
       let authtoken = jwt.sign(data, JWT_KEY);
-      res.json({ authtoken: authtoken });
+      success = true;
+      res.json({ success, authtoken: authtoken });
     } catch (error) {
       console.error(error);
       res.status(500).res.json({ err: "Internal Server Error...!" });
@@ -68,22 +73,25 @@ router.post(
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
+    let success = true;
     const { email, password } = req.body;
     try {
       //Check email:
       let user = await User.findOne({ email });
       if (!user) {
+        success = false;
         return res
           .status(400)
-          .json({ error: "Please login with correct credentials" });
+          .json({ success, error: "Please login with correct credentials" });
       }
 
       //Check password:
       let comparePassword = await bcrypt.compare(password, user.password);
       if (!comparePassword) {
+        success = false;
         return res
           .status(400)
-          .json({ error: "Please login with correct credentials" });
+          .json({ success, error: "Please login with correct credentials" });
       }
 
       //Creating authtoken for user
@@ -93,7 +101,7 @@ router.post(
         },
       };
       let authtoken = jwt.sign(data, JWT_KEY);
-      res.json({ authtoken: authtoken });
+      res.json({ success, authtoken });
     } catch (error) {
       console.error(error);
       res.status(500).res.json({ err: "Internal Server Error...!" });

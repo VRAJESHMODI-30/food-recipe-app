@@ -12,10 +12,14 @@ const FooditemSchema = new Schema({
     required: true,
   },
   ingredients: {
-    type: Array,
+    type: String,
     required: true,
   },
   recipe: {
+    type: String,
+    required: true,
+  },
+  url: {
     type: String,
     required: true,
   },
