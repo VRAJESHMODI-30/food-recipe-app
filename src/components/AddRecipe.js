@@ -78,9 +78,9 @@ const AddRecipe = () => {
           <label htmlFor="recipe" className="form-label">
             Recipe:
           </label>
-          <input
+          <textarea
+            rows={3}
             placeholder="..."
-            type="text"
             className="form-control"
             id="recipe"
             name="recipe"
