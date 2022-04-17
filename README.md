@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+### To Start the CookBook (react-app) install below dependencies and devDependencies:
+**In backend folder node_modules:**<br />
+dependencies:
+<ins>npm install mongoose express bcryptjs jsonwebtoken cors express-validator<br />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+devDependencies:
+<ins>npm install --global nodemon</br?
 
-## Available Scripts
+**For frontend node_modules:**<br/>
+dependencies:
+<ins>npm install react-router-dom concurrently<br/>
 
-In the project directory, you can run:
+To runs the app in the development mode. ***npm run both***
 
-### `npm start`
-
-Runs the app in the development mode.\
+**Run (react-app)**
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Run mongoDB Server**
+Open [http://localhost:5000](http://localhost:5000) to view it in your browser.
 
-### `npm test`
+**CookBook Functionality**<br/>
+**->** It has Login/Signup system which is **end-to-end encrypted**. So, Don't worry about hackers.<br />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Encrypted password](https://user-images.githubusercontent.com/91773413/163726365-c61b3ee8-e9b3-4931-9b25-3527bed5fc82.png)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**->** It has delicious pre-defined recipes which you can make at your kitchen.<br />
+**->** You can search recipes by it's **Name** and **Ingredients** as shown in below video.<br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+https://user-images.githubusercontent.com/91773413/163724689-686af3bd-8a11-4e34-9f0a-f535442ec3aa.mp4
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**->** Can't access **"My Recipe"** functionality without **Signup/Login**.Implement Validation System aswell.<br />
+**->** You can also **Add**/Delete your own recipes in your custom profile.
 
-### `npm run eject`
+![Project Name](https://user-images.githubusercontent.com/91773413/163725894-2d404f2c-c8f2-4010-b150-c85b4a7222d1.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**->** Fully **Responsive design**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![responsiveness](https://user-images.githubusercontent.com/91773413/163726151-8278bd93-9aa8-473b-89d8-c32b00bed07f.gif)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
