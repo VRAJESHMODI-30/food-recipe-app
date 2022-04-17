@@ -1,11 +1,12 @@
 import React from "react";
-
+import cardImg from "../images/myRecipe.jpg";
+import Deletebtn from "./Deletebtn";
 const Box = (props) => {
-  const { itemName, recipe, itemNumber, ingredients, imageUrl } = props;
-  const url =
-    "https://st.depositphotos.com/1077687/4512/v/950/depositphotos_45127421-stock-illustration-cook-book-design.jpg";
+  const { itemName, recipe, itemNumber, ingredients, imageUrl, btn, id } =
+    props;
+
   return (
-    <div className="my-3 rounded">
+    <div className="my-3 rounded text-start">
       <div className="card">
         <div
           style={{
@@ -18,7 +19,7 @@ const Box = (props) => {
           <span className="badge bg-dark">#{itemNumber}</span>
         </div>
         <img
-          src={imageUrl ? imageUrl : url}
+          src={imageUrl ? imageUrl : cardImg}
           className="card-img-top"
           alt="Loading..."
         />
@@ -36,6 +37,7 @@ const Box = (props) => {
             {"   "}
             {recipe}
           </p>
+          {btn && <Deletebtn id={id} />}
         </div>
       </div>
     </div>

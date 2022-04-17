@@ -26,20 +26,8 @@ const AddRecipe = () => {
   };
 
   return (
-    <div
-      className="container my-3"
-      style={
-        {
-          // border: "2px solid black",
-          // zIndex: 100,
-          // position: "absolute",
-          // top: "20%",
-          // left: "0",
-          // color: "white",
-        }
-      }
-    >
-      <h2>Add a recipe</h2>
+    <div className="my-3 outer-box addBox">
+      <h2>~: Add a recipe :~</h2>
       <form className="my-3">
         <div className="mb-3">
           <label htmlFor="itemName" className="form-label">
@@ -73,7 +61,7 @@ const AddRecipe = () => {
         </div>
         <div className="mb-3">
           <label htmlFor="ingredients" className="form-label">
-            Ingredients
+            Ingredients:
           </label>
           <input
             type="text"
@@ -88,7 +76,7 @@ const AddRecipe = () => {
         </div>
         <div className="mb-3">
           <label htmlFor="recipe" className="form-label">
-            Recipe
+            Recipe:
           </label>
           <input
             placeholder="..."
@@ -102,7 +90,7 @@ const AddRecipe = () => {
         </div>
         <button
           type="submit"
-          className="btn btn-primary"
+          className="btn btn-success"
           onClick={handleClick}
           disabled={recipes.itemName.length < 3 || recipes.recipe.length < 10}
         >

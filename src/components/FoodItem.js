@@ -72,6 +72,7 @@ const FoodItem = () => {
                       }
                       imageUrl={element.url}
                       itemNumber={element.itemNumber ? element.itemNumber : ""}
+                      btn={false}
                     />
                   </div>
                 );

@@ -53,12 +53,12 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/fooditem">
-                Food Item
+                Food Items
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/myrecipe">
-                My Recipe
+                My Recipes
               </Link>
             </li>
           </ul>

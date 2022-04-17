@@ -1,0 +1,16 @@
+.addBtn{
+      z-index: 2;
+       position: absolute;
+        right: 2%;
+}
+
+.addBox{
+      border: 2px solid black;
+        z-index: 1;
+        position: absolute;
+        top: 20%;
+        left: 12vw;
+        color: white;
+        width: 75%;
+        padding: 2rem 2rem;
+}
